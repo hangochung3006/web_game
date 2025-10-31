@@ -11,38 +11,223 @@
 
 </head>
 <style>
+    .body {
+    }
+
     .search {
         width: 500px;
-        
     }
-    .btn-search{
-        
+
+    .btn-search {
+
+    }
+
+    .featuredbox {
+        border: 2px solid blue;
+
+    }
+    .advertisement {
+        border: 2px solid red;
+    }
+    .boxlatestbox {
+        border: 2px solid red;
+    }
+    .gamehot {
+        border: 2px solid red;
+    }
+    .giftcode {
+        border: 2px solid red;
     }
 </style>
 <body>
 
-    <div class="container">
-        <div class="row row-cols-3">
-            <div class="col-2 bg-black">
-                <a href="#" class="navbar-brand" style= "font-size: 30px">Logo</a>
+    <div class="container d-flex flex-column gap-3">
+
+        <!-- Header -->
+        <div class="d-flex">
+            <!-- Logo -->
+            <div class="bg-black d-flex align-items-center justify-content-center" style="flex: 2;">
+                <a href="#" class="navbar-brand text-white" style="font-size: 30px;"><img src="#" alt="Alternate Text" /></a>
             </div>
-            <div class="col-6 bg-danger">
-                <form action="/" method="post" class="d-flex m-3">
-                    <input class="search form-control rounded-0" type="text" name="name" value="" />
-                    <button type="submit" class="btn-search btn btn-dark rounded-0">
+
+            <!-- Tìm kiếm -->
+            <div class="bg-danger d-flex align-items-center justify-content-center" style="flex: 6;">
+                <form action="/" method="post" class="d-flex w-100 m-3">
+                    <input class="form-control rounded-start" type="text" name="name" placeholder="Nhập tên game..."
+                           style="border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                    <button type="submit" class="btn btn-dark rounded-end"
+                            style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
                         <i class="bi bi-search"></i>
                     </button>
                 </form>
             </div>
-            <div class="col-4 bg-light d-flex text-center mt-3">
-                <a href="#" class="flex-fill"><i class="bi bi-search me-1"></i>Hướng dẫn</a>
-                <a href="#" class="flex-fill"><i class="bi bi-search me-1"></i>Video</a>
-                <a href="#" class="flex-fill">
-                    <span>Đăng nhập</span>
-                </a>
+
+            <!-- Menu -->
+            <div class="bg-light d-flex align-items-center" style="flex: 4;">
+                <a href="#" class="flex-fill text-center">Hướng dẫn</a>
+                <a href="#" class="flex-fill text-center">Video</a>
+                <a href="#" class="flex-fill text-center">Đăng nhập</a>
             </div>
         </div>
+
+        <!-- Thanh Nav -->
+        <div class="d-flex text-center gap-1">
+            <a href="#" class="flex-fill bg-danger">Danh mục</a>
+            <a href="#" class="flex-fill bg-secondary">Game Hay</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+            <a href="#" class="flex-fill bg-danger">a</a>
+        </div>
+
+        <div class="d-flex text-center gap-1">
+            <a href="#" class="flex-fill bg-danger">Con gái</a>
+            <a href="#" class="flex-fill bg-danger">Game Vui</a>
+            <a href="#" class="flex-fill bg-danger">b</a>
+            <a href="#" class="flex-fill bg-danger">b</a>
+            <a href="#" class="flex-fill bg-danger">b</a>
+            <a href="#" class="flex-fill bg-danger">b</a>
+            <a href="#" class="flex-fill bg-danger">b</a>
+            <a href="#" class="flex-fill bg-danger">b</a>
+        </div>
+
+        <!-- Phần chính -->
+        <div class="d-flex gap-3">
+
+            <!-- Cột trái 80% -->
+            <div class="d-flex flex-column gap-3" style="flex: 8; background-color: lightblue;">
+
+                <div class="featuredbox d-flex flex-column gap-2 p-2">
+                    <div class="d-flex gap-2">
+                        <a href="#" class="flex-fill bg-info">c</a>
+                        <a href="#" class="flex-fill bg-info">c</a>
+                    </div>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="#" class="flex-fill bg-info">c</a>
+                        <a href="#" class="flex-fill bg-info">c</a>
+                        <a href="#" class="flex-fill bg-info">c</a>
+                        <a href="#" class="flex-fill bg-info">c</a>
+                        <a href="#" class="flex-fill bg-info">c</a>
+                        <a href="#" class="flex-fill bg-info">c</a>
+                    </div>
+                </div>
+
+                <div class="advertisement p-2">
+                    <div class="bg-success p-2">a</div>
+                </div>          
+                <div class="boxlatestbox">
+                    <h2 class="col-4 bg-danger p-2" style="flex: 0 0 30%;">Game Mới</h2>
+                    <div class="d-flex flex-wrap gap-3 p-2 text-center">
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">Game 1</p>
+                        </div>
+                        <div class="bg-info p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">a</p>
+                        </div>
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">a</p>
+                        </div>
+                        <div class="bg-info p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">a</p>
+                        </div>
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">a</p>
+                        </div>
+                        <div class="bg-info p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">a</p>
+                        </div>
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" class="mb-2" />
+                            <p class="mt-auto text-center">a</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="advertisement p-2">
+                    <div class="bg-success p-2">a</div>
+                </div>
+
+                <div class="gamehot">
+                    <h2 class="col-4 bg-danger p-2" style="flex: 0 0 30%;">Game Hot</h2>
+                    <div class="d-flex flex-wrap gap-3 p-2 text-center">
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                        <div class="bg-info p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                        <div class="bg-info p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                        <div class="bg-info p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                        <div class="bg-success p-3" style="flex: 0 0 calc((100% - 4*16px)/5);">
+                            <img src="#" alt="Alternate Text" />
+                            <p>a</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="giftcode">
+                    <h2 class="col-4 bg-danger p-2" style="flex: 0 0 30%;">Giftcode</h2>
+                    <div class="d-flex flex-wrap">
+                        <div class="bg-danger d-flex" style="flex: 0 0 50%">
+                            <img src="#" alt="Alternate Text" />
+                            <p>ádasdasd</p>
+                        </div>
+                        <div class="bg-light d-flex" style="flex: 0 0 50%">
+                            <img src="#" alt="Alternate Text" />
+                            <p>ádasdasd</p>
+                        </div>
+                        <div class="bg-danger d-flex" style="flex: 0 0 50%">
+                            <img src="#" alt="Alternate Text" />
+                            <p>ádasdasd</p>
+                        </div>
+                        <div class="bg-light d-flex" style="flex: 0 0 50%">
+                            <img src="#" alt="Alternate Text" />
+                            <p>ádasdasd</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="d-flex flex-column gap-3" style="flex: 2; background-color: lightcoral;">
+                <div class="advertisement p-2">
+                    <div class="bg-success p-2">
+                        a
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
 
     <div class="container body-content">
         @RenderBody()
